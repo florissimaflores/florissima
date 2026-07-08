@@ -46,21 +46,13 @@ header.site {
 }
 
 .logo {
-  font-family: "Playfair Display", serif;
-  color: var(--rose);
-  line-height: 1;
-}
-.logo .name {
-  font-size: 20px;
-  letter-spacing: 0.08em;
-  font-weight: 600;
   display: block;
+  line-height: 0;
 }
-.logo .tag {
-  font-family: "Alex Brush", cursive;
-  font-size: 15px;
+.logo img {
+  height: 44px;
+  width: auto;
   display: block;
-  margin-top: 2px;
 }
 
 nav.main {
