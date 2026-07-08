@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/presentes/style.css">
+<link rel="preload" as="image" fetchpriority="high" href="/presentes/img/hero-1920.jpg" imagesrcset="/presentes/img/hero-640.webp 640w, /presentes/img/hero-960.webp 960w, /presentes/img/hero-1280.webp 1280w, /presentes/img/hero-1920.webp 1920w, /presentes/img/hero-2560.webp 2560w, /presentes/img/hero-3200.webp 3200w" imagesizes="100vw" type="image/webp">
 </head>
 <body>
 
@@ -24,7 +25,10 @@
 </header>
 
 <section class="hero">
-  <img src="/presentes/img/hero.jpg" alt="Mais do que flores, com amor florissima. Criamos experiências florais com flores de alta qualidade e composições cuidadosamente elaboradas para transformar momentos em memórias e marcar ocasiões especiais com beleza e significado. Mãos segurando um buquê de tulipas e copo-de-leite rosa.">
+  <picture>
+    <source type="image/webp" srcset="/presentes/img/hero-640.webp 640w, /presentes/img/hero-960.webp 960w, /presentes/img/hero-1280.webp 1280w, /presentes/img/hero-1920.webp 1920w, /presentes/img/hero-2560.webp 2560w, /presentes/img/hero-3200.webp 3200w" sizes="100vw">
+    <img src="/presentes/img/hero-1920.jpg" srcset="/presentes/img/hero-640.jpg 640w, /presentes/img/hero-960.jpg 960w, /presentes/img/hero-1280.jpg 1280w, /presentes/img/hero-1920.jpg 1920w, /presentes/img/hero-2560.jpg 2560w, /presentes/img/hero-3200.jpg 3200w" sizes="100vw" width="3200" height="1596" fetchpriority="high" alt="Mais do que flores, com amor florissima. Criamos experiências florais com flores de alta qualidade e composições cuidadosamente elaboradas para transformar momentos em memórias e marcar ocasiões especiais com beleza e significado. Mãos segurando um buquê de tulipas e copo-de-leite rosa.">
+  </picture>
 </section>
 
 <section class="intro">

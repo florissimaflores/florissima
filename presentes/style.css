@@ -50,8 +50,8 @@ header.site {
   line-height: 0;
 }
 .logo img {
-  height: 44px;
-  width: auto;
+  width: 100px;
+  height: auto;
   display: block;
 }
 
@@ -83,6 +83,10 @@ nav.main .icon {
 .hero {
   width: 100%;
   background: var(--hero-bg);
+}
+
+.hero picture {
+  display: block;
 }
 
 .hero img {
