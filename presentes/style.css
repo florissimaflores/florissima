@@ -181,9 +181,8 @@ nav.main .icon {
 .product .photo.placeholder .emoji { font-size: 34px; }
 
 .product h3 {
-  font-family: "Playfair Display", serif;
+  font-family: "Jost", "Poppins", sans-serif;
   font-weight: 500;
-  font-style: italic;
   font-size: 20px;
   color: var(--ink);
   margin: 18px 0 8px;
