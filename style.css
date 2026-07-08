@@ -253,7 +253,7 @@ nav.main:hover .icon.bag {
 
 .clube-photo {
   position: relative;
-  min-height: 520px;
+  height: 540px;
 }
 
 .clube-photo img {
@@ -275,35 +275,38 @@ nav.main:hover .icon.bag {
 .clube-copy {
   background: var(--rose);
   color: #fff;
-  padding: 64px 56px;
+  padding: 30px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .clube-copy .script-heading {
   color: #fff;
-  font-size: 40px;
+  font-size: 26px;
 }
 
 .clube-copy .script-tag {
   color: rgba(255, 255, 255, 0.75);
-  font-size: 20px;
+  font-size: 14px;
   display: block;
-  margin: 2px 0 18px;
+  margin: 2px 0 10px;
 }
 
 .clube-copy p {
-  font-size: 15px;
-  line-height: 1.75;
-  margin: 0 0 22px;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 0 12px;
   color: rgba(255, 255, 255, 0.92);
 }
 
 .clube-copy .eyebrow.light {
-  margin-top: 28px;
+  margin-top: 12px;
 }
 
 .clube-copy .chevron-down {
   display: block;
-  margin-top: 22px;
+  margin-top: 10px;
   color: #fff;
   opacity: 0.85;
 }
@@ -570,7 +573,7 @@ footer.site {
 
 @media (max-width: 900px) {
   .clube { grid-template-columns: 1fr; }
-  .clube-photo { min-height: 360px; }
+  .clube-photo { height: 300px; }
   .clube-copy { padding: 48px 32px; }
   .showcase-grid { grid-template-columns: repeat(2, 1fr); }
   .noivas-card { grid-template-columns: 1fr; }
