@@ -110,9 +110,10 @@ nav.main .icon {
 
 .intro .eyebrow {
   font-size: 12px;
+  line-height: 1.1;
   letter-spacing: 0.18em;
   color: var(--rose);
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 .intro h2 {
