@@ -208,6 +208,11 @@ nav.main .icon {
   margin: 14px 0 14px;
 }
 
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
 .product .order-btn {
   display: inline-block;
   width: 100%;
@@ -218,6 +223,7 @@ nav.main .icon {
   color: var(--rose);
   font-size: 12px;
   letter-spacing: 0.14em;
+  margin-top: auto;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
