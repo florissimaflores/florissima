@@ -150,8 +150,6 @@ nav.main .icon {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 48px 32px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
 }
 
 .product .photo {
@@ -183,7 +181,9 @@ nav.main .icon {
 .product .photo.placeholder .emoji { font-size: 34px; }
 
 .product h3 {
-  font-weight: 300;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  font-style: italic;
   font-size: 20px;
   color: var(--ink);
   margin: 18px 0 8px;
@@ -204,7 +204,7 @@ nav.main .icon {
 
 .product .price {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 600;
   color: var(--ink);
   margin: 14px 0 14px;
 }
