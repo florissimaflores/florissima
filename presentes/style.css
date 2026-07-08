@@ -53,6 +53,11 @@ header.site {
   width: 100px;
   height: auto;
   display: block;
+  transition: transform 0.25s ease;
+}
+
+.logo:hover img {
+  transform: scale(1.06);
 }
 
 nav.main {
@@ -62,6 +67,29 @@ nav.main {
   font-size: 13px;
   letter-spacing: 0.12em;
   color: var(--rose);
+}
+
+nav.main a:not(.disabled) {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+nav.main a:not(.disabled)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+nav.main a:not(.disabled):hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 nav.main a.disabled {
@@ -77,6 +105,12 @@ nav.main .icon {
   border: 1.4px solid var(--rose);
   border-radius: 50%;
   display: inline-block;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+nav.main:hover .icon {
+  background: var(--rose);
+  transform: rotate(180deg);
 }
 
 /* Hero */
@@ -139,6 +173,21 @@ nav.main .icon {
   margin: 34px auto 0;
   color: var(--rose);
   font-size: 16px;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  animation: scroll-hint-bounce 2s ease-in-out infinite;
+}
+
+.scroll-hint:hover {
+  background: var(--rose);
+  border-color: var(--rose);
+  color: #fff;
+  animation-play-state: paused;
+}
+
+@keyframes scroll-hint-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
 }
 
 /* Product grid */
