@@ -4,12 +4,12 @@
   --rose: #cf848a;
   --rose-dark: #cf848a;
   --rose-soft: #d99aa9;
-  --cream: #f5f5f5;
-  --cream-deep: #f2e9e2;
+  --cream: #ffffff;
+  --cream-deep: #ffffff;
   --ink: #cf848a;
   --line: #e7d9d3;
   --maxw: 1200px;
-  --hero-bg: #ece4de;
+  --hero-bg: #ffffff;
 }
 
 * { box-sizing: border-box; }
