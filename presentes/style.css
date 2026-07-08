@@ -37,6 +37,14 @@ a { text-decoration: none; color: inherit; }
 /* Header */
 
 header.site {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  background: var(--cream);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -297,7 +305,7 @@ footer.site {
 }
 
 @media (max-width: 560px) {
-  header.site { padding: 16px 20px; flex-wrap: wrap; row-gap: 10px; }
+  .header-inner { padding: 16px 20px; flex-wrap: wrap; row-gap: 10px; }
   nav.main { gap: 16px; font-size: 10.5px; margin-left: auto; }
   .intro { margin-top: 60px; }
   .intro h2 { font-size: 28px; }
