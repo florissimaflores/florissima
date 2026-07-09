@@ -293,6 +293,12 @@ nav.main:hover .icon.bag {
   margin: 2px 0 10px;
 }
 
+.clube-copy .tag-img {
+  height: 26px;
+  width: auto;
+  margin: 4px 0 12px;
+}
+
 .clube-copy p {
   font-size: 13px;
   line-height: 1.6;

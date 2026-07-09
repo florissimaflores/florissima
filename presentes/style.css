@@ -71,9 +71,9 @@ header.site {
 nav.main {
   display: flex;
   align-items: center;
-  gap: 32px;
-  font-size: 13px;
-  letter-spacing: 0.12em;
+  gap: 28px;
+  font-size: 12.5px;
+  letter-spacing: 0.1em;
   color: var(--rose);
 }
 
@@ -107,18 +107,14 @@ nav.main a.disabled {
   position: relative;
 }
 
-nav.main .icon {
-  width: 18px;
-  height: 18px;
-  border: 1.4px solid var(--rose);
-  border-radius: 50%;
-  display: inline-block;
-  transition: background 0.25s ease, transform 0.25s ease;
+nav.main .icon.bag {
+  color: var(--rose);
+  display: inline-flex;
+  transition: transform 0.25s ease;
 }
 
-nav.main:hover .icon {
-  background: var(--rose);
-  transform: rotate(180deg);
+nav.main:hover .icon.bag {
+  transform: translateY(-2px);
 }
 
 /* Hero */
@@ -306,8 +302,8 @@ footer.site {
 }
 
 @media (max-width: 560px) {
-  .header-inner { padding: 16px 20px; flex-wrap: wrap; row-gap: 10px; }
-  nav.main { gap: 16px; font-size: 10.5px; margin-left: auto; }
+  .header-inner { flex-direction: column; align-items: center; padding: 16px 20px; gap: 12px; }
+  nav.main { justify-content: center; flex-wrap: wrap; gap: 10px 16px; font-size: 10.5px; }
   .intro { margin-top: 60px; }
   .intro h2 { font-size: 28px; }
   .products { grid-template-columns: 1fr; padding: 0 20px 60px; gap: 40px; }
