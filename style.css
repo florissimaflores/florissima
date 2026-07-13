@@ -294,7 +294,7 @@ nav.main:hover .icon.bag {
 }
 
 .clube-copy .tag-img {
-  height: 75px;
+  height: 80px;
   width: auto;
   align-self: flex-start;
   margin: 0 0 12px;
@@ -314,13 +314,6 @@ nav.main:hover .icon.bag {
 
 .clube-copy .text-link.light {
   margin-top: 16px;
-}
-
-.clube-copy .chevron-down {
-  display: block;
-  margin-top: 10px;
-  color: #fff;
-  opacity: 0.85;
 }
 
 /* Showcase */
