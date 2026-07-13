@@ -425,21 +425,11 @@ nav.main:hover .icon.bag {
   justify-content: center;
 }
 
-.noivas-badge {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  color: var(--rose);
-}
-
-.noivas-copy .script-heading {
-  font-size: 40px;
-}
-
-.noivas-copy .script-tag {
-  font-size: 20px;
-  display: block;
-  margin-top: 2px;
+.noivas-title-img {
+  height: 110px;
+  width: auto;
+  align-self: flex-start;
+  margin: 0 0 4px;
 }
 
 .noivas-copy p {
