@@ -301,7 +301,7 @@ nav.main:hover .icon.bag {
 }
 
 .clube-copy p {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.6;
   margin: 0 0 12px;
   max-width: 420px;
@@ -310,6 +310,10 @@ nav.main:hover .icon.bag {
 
 .clube-copy .eyebrow.light {
   margin-top: 12px;
+}
+
+.clube-copy .text-link.light {
+  margin-top: 16px;
 }
 
 .clube-copy .chevron-down {
