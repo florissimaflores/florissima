@@ -371,7 +371,7 @@ nav.main:hover .icon.bag {
 .showcase-footer p {
   flex: 1 1 420px;
   max-width: 560px;
-  font-size: 14.5px;
+  font-size: 15px;
   line-height: 1.75;
   color: var(--ink);
   margin: 0;
@@ -435,7 +435,7 @@ nav.main:hover .icon.bag {
 }
 
 .noivas-copy p {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.75;
   color: var(--ink);
   margin: 0;
@@ -452,7 +452,7 @@ nav.main:hover .icon.bag {
   color: #fff;
   text-align: center;
   padding: 90px 32px;
-  margin-top: 100px;
+  margin-top: 0;
 }
 
 .cta h2 {
@@ -469,7 +469,7 @@ nav.main:hover .icon.bag {
 }
 
 .cta p {
-  font-size: 15.5px;
+  font-size: 15px;
   margin: 0 auto 34px;
   max-width: 480px;
   opacity: 0.9;
