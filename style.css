@@ -422,11 +422,11 @@ nav.main:hover .icon.bag {
   padding: 56px 48px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .noivas-title-img {
-  height: 200px;
+  height: 170px;
   width: auto;
   max-width: none;
   align-self: flex-end;
