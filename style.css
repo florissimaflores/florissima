@@ -294,8 +294,9 @@ nav.main:hover .icon.bag {
 }
 
 .clube-copy .tag-img {
-  height: 26px;
+  height: 48px;
   width: auto;
+  align-self: flex-start;
   margin: 4px 0 12px;
 }
 
