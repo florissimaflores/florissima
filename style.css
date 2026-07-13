@@ -407,6 +407,8 @@ nav.main:hover .icon.bag {
 
 .noivas-photo {
   padding: 24px;
+  min-height: 0;
+  overflow: hidden;
 }
 
 .noivas-photo img {
