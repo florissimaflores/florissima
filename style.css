@@ -324,35 +324,10 @@ nav.main:hover .icon.bag {
   padding: 0 32px;
 }
 
-.showcase-heading {
-  font-family: "Playfair Display", serif;
+.showcase-heading-img {
+  height: 130px;
+  width: auto;
   margin: 0 0 40px;
-  line-height: 1.05;
-}
-
-.showcase-heading .line1 {
-  display: block;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  color: var(--rose-dark);
-}
-
-.showcase-heading .line2 {
-  display: block;
-  font-style: italic;
-  font-weight: 700;
-  font-size: 52px;
-  color: var(--rose-dark);
-}
-
-.showcase-heading .line3 {
-  display: block;
-  font-family: "Alex Brush", cursive;
-  font-weight: 400;
-  font-size: 26px;
-  color: var(--rose-soft);
-  margin-top: 6px;
 }
 
 .showcase-grid {
@@ -592,7 +567,7 @@ footer.site {
   .intro .script-heading { font-size: 32px; }
   .clube-copy { padding: 40px 24px; }
   .showcase { margin-top: 70px; }
-  .showcase-heading .line2 { font-size: 40px; }
+  .showcase-heading-img { height: 90px; }
   .noivas { padding: 60px 16px; }
   .noivas-copy { padding: 40px 28px; }
   .cta { padding: 60px 24px; }
