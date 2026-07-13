@@ -313,6 +313,7 @@ nav.main:hover .icon.bag {
 }
 
 .clube-copy .text-link.light {
+  max-width: 420px;
   margin-top: 16px;
 }
 
@@ -434,10 +435,14 @@ nav.main:hover .icon.bag {
 }
 
 .noivas-copy p {
-  font-size: 14.5px;
+  font-size: 16px;
   line-height: 1.75;
   color: var(--ink);
   margin: 0;
+}
+
+.noivas-copy .text-link {
+  margin-top: 16px;
 }
 
 /* CTA */
