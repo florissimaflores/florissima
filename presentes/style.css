@@ -107,15 +107,6 @@ nav.main a.disabled {
   position: relative;
 }
 
-nav.main .icon.bag {
-  color: var(--rose);
-  display: inline-flex;
-  transition: transform 0.25s ease;
-}
-
-nav.main:hover .icon.bag {
-  transform: translateY(-2px);
-}
 
 /* Hero */
 
