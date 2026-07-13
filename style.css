@@ -395,6 +395,7 @@ nav.main:hover .icon.bag {
 .noivas-card {
   position: relative;
   max-width: 980px;
+  height: 540px;
   margin: 0 auto;
   background: #fff;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
@@ -413,6 +414,9 @@ nav.main:hover .icon.bag {
 .noivas-copy {
   position: relative;
   padding: 56px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .noivas-badge {
@@ -556,7 +560,7 @@ footer.site {
   .clube-photo { height: 300px; }
   .clube-copy { padding: 48px 32px; }
   .showcase-grid { grid-template-columns: repeat(2, 1fr); }
-  .noivas-card { grid-template-columns: 1fr; }
+  .noivas-card { grid-template-columns: 1fr; height: auto; }
   .noivas-photo { min-height: 320px; }
 }
 
