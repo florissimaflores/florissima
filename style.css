@@ -304,6 +304,7 @@ nav.main:hover .icon.bag {
   font-size: 13px;
   line-height: 1.6;
   margin: 0 0 12px;
+  max-width: 420px;
   color: rgba(255, 255, 255, 0.92);
 }
 
