@@ -149,9 +149,13 @@ nav.main a.disabled {
   right: 0;
 }
 
-.clube-hero-copy .script-heading {
-  color: #fff;
-  font-size: 62px;
+.clube-hero-logo {
+  margin: 0 0 20px;
+}
+
+.clube-hero-logo img {
+  height: 100px;
+  width: auto;
 }
 
 .clube-hero-copy .lead {
@@ -415,7 +419,7 @@ footer.site {
 
 @media (max-width: 900px) {
   .clube-hero { height: 460px; }
-  .clube-hero-copy .script-heading { font-size: 46px; }
+  .clube-hero-logo img { height: 76px; }
   .clube-paths { grid-template-columns: 1fr; }
   .steps-grid { grid-template-columns: 1fr; gap: 32px; }
 }
@@ -425,7 +429,7 @@ footer.site {
   nav.main { justify-content: center; flex-wrap: wrap; gap: 10px 16px; font-size: 10.5px; }
   .clube-hero { height: 420px; }
   .clube-hero-copy { padding: 0 20px 40px; }
-  .clube-hero-copy .script-heading { font-size: 38px; }
+  .clube-hero-logo img { height: 60px; }
   .clube-intro { margin-top: 60px; }
   .clube-paths { margin-top: 60px; padding: 0 20px; }
   .path-card { padding: 36px 28px; }
