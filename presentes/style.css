@@ -95,7 +95,8 @@ nav.main a:not(.disabled)::after {
   transition: transform 0.3s ease;
 }
 
-nav.main a:not(.disabled):hover::after {
+nav.main a:not(.disabled):hover::after,
+nav.main a.current::after {
   transform: scaleX(1);
   transform-origin: left;
 }
