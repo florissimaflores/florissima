@@ -132,7 +132,7 @@ nav.main a.disabled {
 
 .presentes-hero {
   position: relative;
-  height: 480px;
+  height: 560px;
   overflow: hidden;
 }
 
@@ -329,7 +329,7 @@ footer.site {
 /* Responsive */
 
 @media (max-width: 860px) {
-  .presentes-hero { height: 400px; }
+  .presentes-hero { height: 460px; }
   .presentes-hero-copy .script-heading { font-size: 44px; }
   .products { grid-template-columns: repeat(2, 1fr); }
 }
@@ -337,7 +337,7 @@ footer.site {
 @media (max-width: 560px) {
   .header-inner { flex-direction: column; align-items: center; padding: 16px 20px; gap: 12px; }
   nav.main { justify-content: center; flex-wrap: wrap; gap: 10px 16px; font-size: 10.5px; }
-  .presentes-hero { height: 340px; }
+  .presentes-hero { height: 420px; }
   .presentes-hero-copy { padding: 0 20px 32px; }
   .presentes-hero-copy .script-heading { font-size: 36px; }
   .intro { margin-top: 60px; }
