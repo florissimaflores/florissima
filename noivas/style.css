@@ -140,9 +140,13 @@ nav.main a.disabled {
   right: 0;
 }
 
-.noivas-hero-copy .script-heading {
-  color: #fff;
-  font-size: 52px;
+.noivas-hero-logo {
+  margin: 0 0 16px;
+}
+
+.noivas-hero-logo img {
+  height: 110px;
+  width: auto;
 }
 
 .noivas-hero-copy .lead {
@@ -258,7 +262,7 @@ footer.site {
   nav.main { justify-content: center; flex-wrap: wrap; gap: 10px 16px; font-size: 10.5px; }
   .noivas-hero { height: 340px; }
   .noivas-hero-copy { padding: 0 20px 32px; }
-  .noivas-hero-copy .script-heading { font-size: 38px; }
+  .noivas-hero-logo img { height: 80px; }
   .noivas-form { margin-top: 60px; padding: 0 20px 80px; }
   .noivas-form .script-heading { font-size: 30px; }
   #noivas-form { grid-template-columns: 1fr; }
