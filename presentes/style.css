@@ -162,7 +162,31 @@ nav.main a.disabled {
 .presentes-hero-copy .script-heading {
   color: #fff;
   font-size: 52px;
+  margin: 0 0 28px;
+}
+
+.presentes-hero-copy .scroll-hint {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.4px solid rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0;
+  color: #fff;
+  animation: scroll-hint-bounce 2s ease-in-out infinite;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.presentes-hero-copy .scroll-hint:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #fff;
+}
+
+@keyframes scroll-hint-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
 }
 
 /* Intro */
