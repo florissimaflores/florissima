@@ -159,10 +159,13 @@ nav.main a.disabled {
   right: 0;
 }
 
-.presentes-hero-copy .script-heading {
-  color: #fff;
-  font-size: 52px;
+.presentes-hero-logo {
   margin: 0 0 28px;
+}
+
+.presentes-hero-logo img {
+  height: 280px;
+  width: auto;
 }
 
 .presentes-hero-copy .scroll-hint {
@@ -354,7 +357,7 @@ footer.site {
 
 @media (max-width: 860px) {
   .presentes-hero { height: 460px; }
-  .presentes-hero-copy .script-heading { font-size: 44px; }
+  .presentes-hero-logo img { height: 220px; }
   .products { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -363,7 +366,7 @@ footer.site {
   nav.main { justify-content: center; flex-wrap: wrap; gap: 10px 16px; font-size: 10.5px; }
   .presentes-hero { height: 420px; }
   .presentes-hero-copy { padding: 0 20px 32px; }
-  .presentes-hero-copy .script-heading { font-size: 36px; }
+  .presentes-hero-logo img { height: 170px; }
   .intro { margin-top: 60px; }
   .intro h2 { font-size: 28px; }
   .products { grid-template-columns: 1fr; padding: 0 20px 60px; gap: 40px; }
