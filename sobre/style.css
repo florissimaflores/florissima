@@ -1,0 +1,318 @@
+/* Florissima — /sobre */
+
+:root {
+  --rose: #cf848a;
+  --rose-dark: #cf848a;
+  --rose-soft: #d99aa9;
+  --cream: #ffffff;
+  --cream-deep: #f5f0ee;
+  --ink: #cf848a;
+  --line: #e7d9d3;
+  --maxw: 1200px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: "Jost", "Poppins", sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+a { text-decoration: none; color: inherit; }
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  color: var(--rose);
+  margin: 0 0 6px;
+}
+
+.eyebrow.light { color: #fff; opacity: 0.9; }
+
+.script-heading {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 44px;
+  color: var(--rose-dark);
+  margin: 0 0 16px;
+  line-height: 1.1;
+}
+
+/* Header (shared) */
+
+header.site {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  background: var(--cream);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 32px;
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
+
+.logo { display: block; line-height: 0; }
+.logo img { width: 100px; height: auto; display: block; transition: transform 0.25s ease; }
+.logo:hover img { transform: scale(1.06); }
+
+nav.main {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-size: 12.5px;
+  letter-spacing: 0.1em;
+  color: var(--rose);
+}
+
+nav.main a:not(.disabled) {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+nav.main a:not(.disabled)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+nav.main a:not(.disabled):hover::after,
+nav.main a.current::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+nav.main a.disabled {
+  color: var(--rose);
+  opacity: 0.45;
+  cursor: default;
+}
+
+/* Hero */
+
+.sobre-hero {
+  position: relative;
+  height: 560px;
+  overflow: hidden;
+}
+
+.sobre-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sobre-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, rgba(60, 30, 34, 0.55) 0%, rgba(60, 30, 34, 0.32) 45%, rgba(60, 30, 34, 0.05) 75%);
+}
+
+.sobre-hero-copy {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0 32px 48px;
+  max-width: var(--maxw);
+  width: 100%;
+  margin: 0 auto;
+  right: 0;
+}
+
+.sobre-hero-copy .script-heading {
+  color: #fff;
+  font-size: 52px;
+}
+
+.sobre-hero-copy .lead {
+  color: #fff;
+  font-size: 16px;
+  max-width: 420px;
+  line-height: 1.6;
+  margin: 0 0 28px;
+  opacity: 0.95;
+}
+
+.sobre-hero-copy .scroll-hint {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.4px solid rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #fff;
+  animation: scroll-hint-bounce 2s ease-in-out infinite;
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.sobre-hero-copy .scroll-hint:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #fff;
+}
+
+@keyframes scroll-hint-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+/* História */
+
+.sobre-historia {
+  text-align: center;
+  max-width: 720px;
+  margin: 90px auto 0;
+  padding: 0 32px;
+}
+
+.sobre-historia p {
+  font-size: 16.5px;
+  line-height: 1.8;
+  color: var(--ink);
+  margin: 0 0 20px;
+}
+
+/* Valores */
+
+.sobre-valores {
+  text-align: center;
+  max-width: var(--maxw);
+  margin: 100px auto 0;
+  padding: 0 32px;
+}
+
+.valores-grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  text-align: left;
+}
+
+.valor {
+  position: relative;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+
+.valor-num {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 34px;
+  color: var(--rose-soft);
+  margin-bottom: 14px;
+}
+
+.valor h3 {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  color: var(--ink);
+  margin: 0 0 8px;
+}
+
+.valor p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* CTA */
+
+.cta {
+  background: var(--rose);
+  color: #fff;
+  text-align: center;
+  padding: 90px 32px;
+  margin-top: 100px;
+}
+
+.cta h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.25;
+  margin: 0 0 18px;
+}
+
+.cta h2 em {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.cta p {
+  font-size: 15px;
+  margin: 0 auto 34px;
+  max-width: 480px;
+  opacity: 0.9;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1.4px solid #fff;
+  padding: 16px 36px;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  color: #fff;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.cta-btn:hover {
+  background: #fff;
+  color: var(--rose);
+}
+
+/* Footer (shared) */
+
+footer.site {
+  background: var(--cream-deep);
+  text-align: center;
+  padding: 26px 20px;
+  font-size: 12.5px;
+  color: var(--ink);
+  border-top: 1px solid var(--rose);
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .sobre-hero { height: 460px; }
+  .sobre-hero-copy .script-heading { font-size: 44px; }
+  .valores-grid { grid-template-columns: 1fr; gap: 32px; }
+}
+
+@media (max-width: 560px) {
+  .header-inner { flex-direction: column; align-items: center; padding: 16px 20px; gap: 12px; }
+  nav.main { justify-content: center; flex-wrap: wrap; gap: 10px 16px; font-size: 10.5px; }
+  .sobre-hero { height: 420px; }
+  .sobre-hero-copy { padding: 0 20px 32px; }
+  .sobre-hero-copy .script-heading { font-size: 36px; }
+  .sobre-historia { margin-top: 60px; padding: 0 20px; }
+  .sobre-valores { margin-top: 70px; padding: 0 20px; }
+  .cta { padding: 60px 24px; margin-top: 70px; }
+  .cta h2 { font-size: 30px; }
+}
